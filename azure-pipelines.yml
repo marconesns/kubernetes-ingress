@@ -1,4 +1,12 @@
 # PHP
+- task: Kubernetes@1
+  inputs:
+    connectionType: 'Kubernetes Service Connection'
+    kubernetesServiceEndpoint: 'scalling'
+    namespace: 'teste'
+    command: 'get'
+    secretType: 'dockerRegistry'
+    containerRegistryType: 'Azure Container Registry'
 # Test and package your PHP project.
 # Add steps that run tests, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/php
